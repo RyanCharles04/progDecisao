@@ -3,20 +3,14 @@ Fazer um algoritmo que pergunte 2 números, e ao final, exiba como resposta na t
 o menor, ou ainda, se ambos são iguais.
 '''
 
-num1 = float(input("Informe um número:"))
-num2 = float(input("Informe outro número:"))
+numero1 = float(input("Digite o primeiro número: "))
+numero2 = float(input("Digite o segundo número: "))
 
-maior = num1
-
-if ( maior < num2 ):
-    maior = num2
-    print(f"O maior valor inserido é {maior}")
-
-menor = num1
-
-if ( menor > num2 ):
-    menor = num2
-    print(f"O menor valor inserido é {menor}")
-
+if numero1 == numero2:
+        print("Os números são iguais.")
+elif numero1 > numero2:
+        print(f"O maior número é: {numero1}")
+        print(f"O menor número é: {numero2}")
 else:
-    print(f"Amos números inseridos são iguais")
+        print(f"O maior número é: {numero2}")
+        print(f"O menor número é: {numero1}")
